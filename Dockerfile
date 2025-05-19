@@ -14,7 +14,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends locales netc
 WORKDIR /app
 
 COPY --chmod=755 entrypoint.sh ./
-COPY ./custom_addons
+COPY ./custom_addons ./custom_addons
 
 ENTRYPOINT ["/bin/sh"]
 
