@@ -19,3 +19,5 @@ COPY ./custom_addons ./custom_addons
 ENTRYPOINT ["/bin/sh"]
 
 CMD ["entrypoint.sh"]
+
+RUN chown -R odoo:odoo /app/custom_addons
